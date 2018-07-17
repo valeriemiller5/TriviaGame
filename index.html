@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz Time!</title>
+</head>
+<body>
+    <h1>Lord of the Rings Trivia</h1>
+
+    <button id="startQuiz">Start Quiz!</button>
+    
+    <div class="questionOne">
+        <h2>When the story starts, what birthday is Bilbo celebrating?</h2>
+        <form >
+            <input type="radio" name="choice" value="120"> 120
+            <input type="radio" name="choice" value="82"> 82
+            <input type="radio" name="choice" value="111"> 111
+            <input type="radio" name="choice" value="19"> 19
+        </form>
+    </div>
+    
+    <div class="questionTwo">
+        <h2>What is the name of the spider Frodo fights?</h2><br>
+        <form >
+            <input type="radio" name="choice" value="Shelob"> Shelob
+            <input type="radio" name="choice" value="IT"> IT
+            <input type="radio" name="choice" value="Nimhe"> Nimhe
+            <input type="radio" name="choice" value="Does it matter, it's a spider!!"> Does it matter, it's a spider!!
+        </form>
+    </div>
+    
+    <div class="questionThree">
+        <h2>Who is Galadriel's husband?</h2><br>
+        <form >
+            <input type="radio" name="choice" value="Elrond"> Elrond
+            <input type="radio" name="choice" value="Arwen"> Arwen
+            <input type="radio" name="choice" value="Legolas"> Legolas
+            <input type="radio" name="choice" value="Celeborn"> Celeborn
+        </form>
+    </div>       
+    
+    <div class="questionFour">
+        <h2>What race is known as "Durin's Folk"?</h1><br>
+            <form >
+                <input type="radio" name="choice" value="Hobbits outside The Shire"> Hobbits outside The Shire
+                <input type="radio" name="choice" value="Elves"> Elves
+                <input type="radio" name="choice" value="The Great Eagles"> The Great Eagles
+                <input type="radio" name="choice" value="Dwarves"> Dwarves
+            </form>
+    </div>
+    
+    <div class="questionFive">
+        <h2>Which is NOT the name of an inn in "The Lord of the Rings"?</h1><br>
+            <form >
+                <input type="radio" name="choice" value="the Old Guesthouse"> The Old Guesthouse
+                <input type="radio" name="choice" value="The Green Dragon"> The Green Dragon
+                <input type="radio" name="choice" value="The Prancing Pony"> The Prancing Pony
+                <input type="radio" name="choice" value="The Southern Star"> The Southern Star
+            </form>
+    </div>
+    
+    <div class="questionSix">
+        <h2>The sword Bilbo passes along to Frodo is called __________.</h1><br>
+            <form >
+                <input type="radio" name="choice" value="Needle"> Needle
+                <input type="radio" name="choice" value="Sting"> Sting
+                <input type="radio" name="choice" value="Orcrist"> Orcrist
+                <input type="radio" name="choice" value="Glamdring"> Glamdring
+            </form>
+    </div>
+    
+    <div class="questionSeven">
+        <h2>Before calling himself Gollum, he was called ____________.</h1><br>
+            <form >
+                <input type="radio" name="choice" value="Smeagol"> Smeagol
+                <input type="radio" name="choice" value="Samwise"> Samwise
+                <input type="radio" name="choice" value="Charlie"> Charlie
+                <input type="radio" name="choice" value="Pippin"> Pippin
+            </form>
+    </div>
+    
+    <div class="questionEight">
+        <h2>Who said "Nine companions. So be it. You shall be the fellowship of the ring."?</h1><br>
+            <form >
+                <input type="radio" name="choice" value="Gandolf"> Gandolf
+                <input type="radio" name="choice" value="Elrond"> Elrond
+                <input type="radio" name="choice" value="Aragorn"> Aragorn
+                <input type="radio" name="choice" value="Boromir"> Boromir
+            </form>
+    </div>
+    
+    <div class="questionNine">
+        <h2>How many Rings of Power were forged</h1><br>
+            <form >
+                <input type="radio" name="choice" value="20"> 20
+                <input type="radio" name="choice" value="1"> 1
+                <input type="radio" name="choice" value="13"> 13
+                <input type="radio" name="choice" value="19"> 19
+            </form>
+    </div>
+    
+    <div class="questionTen">
+        <h2>"I don't know half of you half as well as I should like, and I like less than half of you half as well as you deserve," said ________.</h1><br>
+            <form >
+                <input type="radio" name="choice" value="Frodo"> Frodo
+                <input type="radio" name="choice" value="Pippin"> Pippin
+                <input type="radio" name="choice" value="Bilbo"> Bilbo
+                <input type="radio" name="choice" value="Merry"> Merry
+            </form>
+    </div>
+    
+    <div class="finalResults">
+        <h1>Your Results:</h1>
+        <ul>
+            <li>Questions Answered Correctly: <span id="correctAnswers"></span></li>
+            <li>Questions Answered Incorrectly: <span id="incorrectAnswers"></span></li>
+            <li>Questions Not Answered: <span id="unanswered"></span></li>
+        </ul>
+    </div>
+
+    <button id="retakeQuiz">Retake Quiz</button>
+    
+     
+</body>
+</html>
