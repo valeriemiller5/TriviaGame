@@ -6,17 +6,17 @@
     <meta htth2-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bilbo&amp;subset=latin-ext" rel="stylesheet">
     <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <title>Quiz Time!</title>
 </head>
 <body>
-    <div>
-        <h1>Lord of the Rings Trivia</h1>
-
-        <button id="startQuiz">Start Quiz!</button>
-
+    <div id="writingStyle">
+        <div class="header">
+            <h1>Lord of the Rings Trivia</h1>
+            <button id="startQuiz">Start Quiz!</button>
+        </div>
         <div id="gameTimer">Time Remaining: <span id="timer">30</span></div>
-    
         <form id="quizForm">
             <div id="takeQuiz">
             <h2>When the story starts, what birthday is Bilbo celebrating?</h2>
@@ -25,11 +25,13 @@
                 <label for="var_string"><input type="radio" name="oneQuestion" value="1" id="var_string" />111</label>
                 <label for="var_string"><input type="radio" name="oneQuestion" value="0" id="var_string" />19</label>
             <br>
+            <br>
             <h2>What is the name of the spider Frodo fights?</h2>
                 <label for="var_string"><input type="radio" name="twoQuestion" value="1" id="var_string" />Shelob</label>
                 <label for="var_string"><input type="radio" name="twoQuestion" value="0" id="var_string" />It</label>
                 <label for="var_string"><input type="radio" name="twoQuestion" value="0" id="var_string" />Nimhe</label>
                 <label for="var_string"><input type="radio" name="twoQuestion" value="1" id="var_string" />Does it matter, it's a spider! KILL IT!!</label>
+            <br>
             <br>
             <h2>Who is Galadriel's husband?</h2>
                 <label for="var_string"><input type="radio" name="threeQuestion" value="0" id="var_string" />Elrond</label>
@@ -37,11 +39,13 @@
                 <label for="var_string"><input type="radio" name="threeQuestion" value="0" id="var_string" />Legolas</label>
                 <label for="var_string"><input type="radio" name="threeQuestion" value="1" id="var_string" />Celeborn</label>
             <br>
+            <br>
             <h2>What race is known as 'Durin's Folk'?</h2>
                 <label for="var_string"><input type="radio" name="fourQuestion" value="0" id="var_string" />Hobbits outside of the Shire</label>
                 <label for="var_string"><input type="radio" name="fourQuestion" value="0" id="var_string" />Elves</label>
                 <label for="var_string"><input type="radio" name="fourQuestion" value="0" id="var_string" />Humans</label>
                 <label for="var_string"><input type="radio" name="fourQuestion" value="1" id="var_string" />Dwarves</label>
+            <br>
             <br>
             <h2>Which is NOT the name of an inn in "The Lord of the Rings"?</h2>
                 <label for="var_string"><input type="radio" name="fiveQuestion" value="0" id="var_string" />The Old Guesthouse</label>
@@ -49,11 +53,13 @@
                 <label for="var_string"><input type="radio" name="fiveQuestion" value="0" id="var_string" />The Prancing Pony</label>
                 <label for="var_string"><input type="radio" name="fiveQuestion" value="1" id="var_string" />The Southern Star</label>
             <br>
+            <br>
             <h2>The sword Bilbo passes along to Frodo is called __________.</h2>
                 <label for="var_string"><input type="radio" name="sixQuestion" value="0" id="var_string" />Needle</label>
                 <label for="var_string"><input type="radio" name="sixQuestion" value="1" id="var_string" />Sting</label>
                 <label for="var_string"><input type="radio" name="sixQuestion" value="0" id="var_string" />Orcrist</label>
                 <label for="var_string"><input type="radio" name="sixQuestion" value="0" id="var_string" />Glamdring</label>
+            <br>
             <br>
             <h2>Before calling himself Gollum, he was called ____________.</h2>
                 <label for="var_string"><input type="radio" name="sevenQuestion" value="1" id="var_string" />Smeagol</label>
@@ -61,11 +67,13 @@
                 <label for="var_string"><input type="radio" name="sevenQuestion" value="0" id="var_string" />Joffrey</label>
                 <label for="var_string"><input type="radio" name="sevenQuestion" value="0" id="var_string" />Pippin</label>
             <br>
+            <br>
             <h2>Who said "Nine companions. So be it. You shall be the fellowship of the ring"?</h2>
                 <label for="var_string"><input type="radio" name="eightQuestion" value="0" id="var_string" />Gandolf</label>
                 <label for="var_string"><input type="radio" name="eightQuestion" value="1" id="var_string" />Elrond</label>
                 <label for="var_string"><input type="radio" name="eightQuestion" value="0" id="var_string" />Aragorn</label>
                 <label for="var_string"><input type="radio" name="eightQuestion" value="0" id="var_string" />Boromir</label>
+            <br>
             <br>
             <h2>How many Rings of Power were forged?</h2>
                 <label for="var_string"><input type="radio" name="nineQuestion" value="1" id="var_string" />20</label>
@@ -73,28 +81,26 @@
                 <label for="var_string"><input type="radio" name="nineQuestion" value="0" id="var_string" />13</label>
                 <label for="var_string"><input type="radio" name="nineQuestion" value="0" id="var_string" />19</label>
             <br>
+            <br>
             <h2>"I don't know half of you half as well as I should like, and I like less than half of you half as well as you deserve," said ________.</h2>
                 <label for="var_string"><input type="radio" name="tenQuestion" value="0" id="var_string" />Frodo   </label>
                 <label for="var_string"><input type="radio" name="tenQuestion" value="0" id="var_string" />Pippin</label>
                 <label for="var_string"><input type="radio" name="tenQuestion" value="1" id="var_string" />Bilbo</label>
                 <label for="var_string"><input type="radio" name="tenQuestion" value="0" id="var_string" />Merry</label>
             <br>
-            <button type="submit" value="Submit">Submit</button>
+            <br>
+            <button id="submit" type="submit" value="Submit">Submit</button>
         </div>
     </form>
     </div>
-    
-
-    <div class="finalResults">
-        <ul>
-            <li id="correctAnswers"></li>
-            <li id="incorrectAnswers"></li>
-            <li id="unanswered"></li>
-        </ul>
+    <div class="finalResults" id="writingStyle">
+        <div class="answers">
+            <p id="correctAnswers"></p>
+            <p id="incorrectAnswers"></p>
+            <p id="unanswered"></p>
+        </div>
+        <button id="retakeQuiz">Retake Quiz</button>
     </div>
-
-    <button id="retakeQuiz">Retake Quiz</button>
-    
 <script src="assets/javascript/game.js" type="text/javascript"></script>  
 </body>
 </html>
