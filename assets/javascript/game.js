@@ -39,13 +39,16 @@ document.getElementById("quizForm").onsubmit = function() {
 
 // this function is only checking the first question, I want it to check all questions for correct, incorrect and unanswered questions...
 function results() {
-    if ($("input[name='Question']:checked").val() == 1) {
-        rightAnswer = rightAnswer + 1;
-    } else if ($("input[name='Question']:checked").val() == 0) {
-        wrongAnswer = wrongAnswer + 1;
-    } else {
-        missingAnswer = missingAnswer + 1;
-    }
+    $("input:radio").each(function(){
+        var name = $(this).attr("name");
+        if($("input:radio[name="+name+"]:checked").val() == 1){
+            rightAnswer++;
+        } else if($("input:radio[name="+name+"]:checked").val() == 0){
+            wrongAnswer++;
+        } else {
+            missingAnswer++;
+        }
+    });
     $(".finalResults").show();
     $("#retakeQuiz").show();
     $("#takeQuiz").hide();
@@ -71,10 +74,9 @@ $("#retakeQuiz").on("click", reset);
 // once "start quiz" is clicked, timer begins; counts down from 45 secs
 // questions may be answered or remain unanswered - everthing is documented once "submit" is clicked
 // run function to check if questions were answered correctly, incorrectly, or not at all
-// if all questions have been answered, show results.  Countdown stops if there is still time on the clock.
+// if "submit", show results.  Countdown stops if there is still time on the clock.
 // else, if timer runs out, show results;
 // once "retake quiz" is clicked, timer and quiz start over;
 });
-
 
   
